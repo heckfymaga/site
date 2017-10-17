@@ -1,0 +1,15 @@
+<%= form_for @tweet do |f| %>
+	<div class = "form-control">
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+	<div class = "form-control">
+		<%= f.label :summary %>
+		<%= f.text_area :summary %>
+	</div>
+	<div class = "form-control">
+		<%= f.label :body %>
+		<%= f.text_area :body %>
+	</div>
+	<%= f.submit "Save" %>
+<% end %>

@@ -1,0 +1,4 @@
+<% @tweets.each do |tweet| %>
+	<h1><%= link_to tweet.title,tweet %></h1>
+	<%= tweet.body %>
+<% end %>
